@@ -1,7 +1,6 @@
 const { StatusCodes } = require('http-status-codes');
 const { BadRequestError, NotFoundError } = require('../errors');
 const mongoose = require('mongoose');
-const moment = require('moment');
 const User = require('../models/User');
 
 const getUserDetail = async (req, res,next) => {
