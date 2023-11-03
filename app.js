@@ -31,6 +31,7 @@ app.use(xss());
 // routes
 app.get("/",(req,res)=>{
   res.write(`<p>Server is running</p>`)
+  res.end();
 })
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', authenticateUser, userRouter);
